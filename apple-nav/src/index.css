@@ -3,3 +3,24 @@ body {
   padding: 0;
   font-family: sans-serif;
 }
+
+
+.nav-link {
+  margin: 15px;
+  text-decoration: none;
+  color: white;
+  font-weight: 100;
+}
+
+.nav-link:hover {
+  color: silver;
+}
+
+.page {
+  border: 1px solid green;
+}
+
+.sub-nav {
+  border: 1ps solid blue;
+  
+}
