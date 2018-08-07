@@ -8,7 +8,7 @@ function SubNav(props) {
     console.log(props)
     return (
         <div className="sub-nav">
-           {props.children}
+           {props.name}dd
         </div>
     )
  }

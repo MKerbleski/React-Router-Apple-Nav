@@ -25,16 +25,21 @@ class App extends Component {
 
        
       </NavBar>
-   
+      
+      
       {appleNavData.map(item => {
           console.log(item.name)
          return item.sub.map( item => {
             return <SubNav {...item} key={item.id} to={`/${item.name.toLowerCase()}`}>{item.name}</SubNav>
           })
         })}
+      
+
+     
 
       <Route path='/:name' render={props => ( 
         <Page className="page" {...props} key={props.id} />
+    
       )} />
       </div>
       
