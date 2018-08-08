@@ -28,3 +28,18 @@ body {
   justify-content: center;  align-items: center;
   margin: 20px;
 }
+
+.sub-list {
+  border: 1px solid green;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  height: 50px;
+}
+
+.sub-list-items {
+  margin: 10px;
+  padding: 10px;
+  border: 1px solid red;
+}

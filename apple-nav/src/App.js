@@ -7,24 +7,43 @@ import Page from './page.js' ;
 import SubNav from './subNav.js' ;
 
 export default class App extends Component {
+
   render(props) {
+    // constructor(props){
+    //   super();
+    //   this.state{
+    //     activeId: 0,
+    //   }
+    // };
+
     return (
       <div className="app">
         <NavBar>
           {appleNavData.map( item => {
             return (
               <div>
-                <NavLink key={item.id} activeClassName="activeNavButton" className="nav-link" sub={item.sub} to={`/${item.name.toLowerCase()}`}>{item.name}
+                <NavLink key={item.id} activeClassName="activeNavButton" className="nav-link" sub={item.sub} to={`/${item.id}`}>{item.name}
                 </NavLink>
               </div>
             )
             })
           }
         </NavBar>
+
         <Route exact path="/home" component={Home} />
 
-        <Route path="/:id" render={props => {
-          return <SubNav {...props} data={appleNavData} /> }} />
+        <div className="sub-list">
+          <Route path='/:banana' render={props => {
+            return <SubNav {...props} data={appleNavData}  /> }}
+          />
+        </div>
+
+        {/* <div className="page">
+          <Route path="/:name/:subName" render={props => {
+            return <Page {...props} data={appleNavData} /> }}
+            />
+        </div> */}
+        
 
       </div>
       
