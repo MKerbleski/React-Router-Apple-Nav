@@ -30,16 +30,36 @@ body {
 }
 
 .sub-list {
-  border: 1px solid green;
+  border: 1px solid purple;
   display: flex;
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  height: 50px;
+  background-color: black;
+}
+
+.another {
+  border: 1px solid black;
+  display: flex;
+  flex-direction: row;
 }
 
 .sub-list-items {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   margin: 10px;
   padding: 10px;
   border: 1px solid red;
+  text-decoration: none;
+  color: white;
+}
+
+.sub-list-items:hover {
+  color: silver;
+}
+
+.sub-list-items > img {
+  margin: 6px;
+  border: 1px solid green;
 }

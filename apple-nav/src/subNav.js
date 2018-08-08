@@ -13,14 +13,18 @@ function SubNav(props) {
     let copy = appleNavData[bananaId].sub;
     console.log(copy);
     return (
-        <div>
+        <div className="another">
             {copy.map(item => (
-                <Link 
-                    key={item.id}
-                    className="sub-list-items" 
-                    to={`/${props.match.params.banana}/${item.name}`}>
-                    {item.name}
-                </Link>
+                <div >
+                    <Link 
+                        className="sub-list-items"
+                        key={item.id}
+                        to={`/${props.match.params.banana}/${item.name}`}>
+                        <img src={item.img} alt=" " />
+                        {item.name}
+                    </Link>
+                </div>
+                
                 )
             )}
         </div>

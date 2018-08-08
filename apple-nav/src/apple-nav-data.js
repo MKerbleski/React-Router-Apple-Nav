@@ -4,11 +4,11 @@
     {id: 0, name: 'Home', sub: []},
     {id: 1, name: 'Mac', sub: [
         {id: 1, name: 'macbook', img:""},
-        {id: 2, name: 'macbook Air', img:""},
-        {id: 3, name: 'macbook P', img:""},
+        {id: 2, name: 'macbookAir', img:""},
+        {id: 3, name: 'macbookP', img:""},
         {id: 4, name: 'mac', img:""},
         {id: 5, name: 'iMac', img:""},
-        {id: 6, name: 'mac pro', img:""},
+        {id: 6, name: 'macPro', img:""},
         ]    
     },
     {id: 2, name: 'iPad', sub: [

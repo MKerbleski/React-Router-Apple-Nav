@@ -38,11 +38,11 @@ export default class App extends Component {
           />
         </div>
 
-        {/* <div className="page">
+        <div className="page">
           <Route path="/:name/:subName" render={props => {
             return <Page {...props} data={appleNavData} /> }}
             />
-        </div> */}
+        </div>
         
 
       </div>
