@@ -39,9 +39,13 @@ export default class App extends Component {
         </div>
 
         <div className="page">
-          <Route path="/:name/:subName" render={props => {
-            return <Page {...props} data={appleNavData} /> }}
-            />
+          <Route path="/:banana/:apple" render=     
+            {props => {
+              return (
+                <Page {...props} data={appleNavData} />
+              ) 
+            }}
+          />
         </div>
         
 
