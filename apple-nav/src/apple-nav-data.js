@@ -1,7 +1,7 @@
 
 
  const appleNavData = [
-    // {id:1, name: 'Home'},
+    {id:1, name: 'Home'},
     {id: 2, name: 'Mac', sub: [
         {id: 1, name: 'macbook', img:""},
         {id: 2, name: 'macbook Air', img:""},
