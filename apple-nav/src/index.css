@@ -9,6 +9,7 @@ body {
   text-decoration: none;
   color: white;
   font-weight: 100;
+  font-size: 12px;
 }
 
 .nav-link:hover {
@@ -30,12 +31,12 @@ body {
 }
 
 .sub-list {
-  border: 1px solid purple;
+  /* border: 1px solid purple; */
   display: flex;
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  background-color: black;
+  background-color: RGBA(0,0,0,0.9);
 }
 
 .another {
@@ -48,9 +49,12 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: baseline;
+  font-size: 10px;
   margin: 10px;
+  margin-top: 0;
   padding: 10px;
-  border: 1px solid red;
+  /* border: 1px solid red; */
   text-decoration: none;
   color: white;
 }
@@ -61,7 +65,8 @@ body {
 
 .sub-list-items > img {
   margin: 6px;
-  border: 1px solid green;
+  color: white;
+  /* border: 1px solid green; */
 }
 
 .page-div {

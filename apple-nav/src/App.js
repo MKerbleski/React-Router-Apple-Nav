@@ -76,8 +76,9 @@ function Ipad () {
 
 
 const NavBar = styled.div`
-  border: 1px solid red;
+  /* border: 1px solid red; */
   display: flex;
   justify-content: center;
   background-color: black;
+  padding: 10px;
 `;
